@@ -15,7 +15,11 @@ export const weddingData = {
       mother: "Smt. Sweety Suvarna",
       houseName: "",
       city: "Nettoor, Kochi"
-    }
+    },
+    siblings: [
+      "Stiyan Antony",
+      "Sansia Maria"
+    ]
   },
   groom: {
     name: "Noel Binoy",
@@ -27,7 +31,10 @@ export const weddingData = {
       mother: "Smt. Elza Binoy",
       houseName: "",
       city: "Ponkunnam, Pala"
-    }
+    },
+    siblings: [
+      "Nevin"
+    ]
   },
 
   // Event Details: Madhuramveppu & Sangeeth Night

@@ -230,6 +230,32 @@ body {
   font-size: 0.95rem !important;
 }
 
+.couple-siblings-line {
+  margin-top: 0.65rem !important;
+  font-family: var(--font-serif-en) !important;
+  font-size: 0.96rem !important;
+  color: var(--theme-text-subheading) !important;
+  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+  line-height: 1.5;
+}
+
+.couple-siblings-line .siblings-label {
+  font-style: italic !important;
+  color: var(--theme-gold-accent) !important;
+  font-weight: 500;
+  font-size: 0.92rem;
+}
+
+.couple-siblings-line .siblings-names {
+  font-weight: 600;
+  color: var(--theme-text-subheading) !important;
+}
+
 .couple-tagline {
   font-family: var(--font-serif-en) !important;
   font-size: clamp(1.15rem, 2.8vw, 1.45rem) !important;
