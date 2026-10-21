@@ -11,9 +11,9 @@ export function renderCountdown() {
         <div class="card-corner corner-bottom-left"></div>
         <div class="card-corner corner-bottom-right"></div>
 
-        <h2 class="countdown-heading">${texts.countdownHeading}</h2>
+        <h2 class="countdown-heading" id="countdown-heading">${texts.countdownHeading}</h2>
 
-        <div class="countdown-grid">
+        <div class="countdown-grid" id="countdown-grid">
           <div class="countdown-box">
             <span class="countdown-number" id="cd-days">00</span>
             <span class="countdown-label">Days</span>
@@ -41,8 +41,31 @@ export function renderCountdown() {
           </div>
         </div>
 
-        <div class="countdown-event-date-pill">
+        <!-- Celebratory Finished Message (shown when countdown ends or during testing) -->
+        <div class="countdown-ended-card" id="countdown-ended" style="display: none;">
+          <div class="countdown-ended-motif">✧ ✝ ✧</div>
+          <h3 class="countdown-ended-title">The Celebration Has Begun!</h3>
+          <p class="countdown-ended-subtitle-ml">ആഘോഷം ആരംഭിച്ചു</p>
+          <div class="countdown-ended-divider">
+            <span class="divider-line"></span>
+            <span class="divider-diamond">&#9670;</span>
+            <span class="divider-line"></span>
+          </div>
+          <p class="countdown-ended-couple">Sisna Maria &amp; Noel Binoy</p>
+          <p class="countdown-ended-blessing">
+            Thank you for being part of our special evening and blessing our new beginnings with your love and presence.
+          </p>
+        </div>
+
+        <div class="countdown-event-date-pill" id="countdown-date-pill">
           <span>December 28, 2026 &bull; 6:00 PM</span>
+        </div>
+
+        <!-- Interactive Testing Button to preview both states -->
+        <div style="text-align: center; margin-top: 0.85rem;">
+          <button type="button" class="countdown-test-toggle" id="cd-test-toggle" title="Click to test active timer vs ended message">
+            <span>⇄ Switch to Live Countdown</span>
+          </button>
         </div>
       </div>
     </section>
@@ -55,20 +78,50 @@ export function initCountdownTimer() {
   const elHours = document.getElementById('cd-hours');
   const elMinutes = document.getElementById('cd-minutes');
   const elSeconds = document.getElementById('cd-seconds');
+  const elGrid = document.getElementById('countdown-grid');
+  const elEnded = document.getElementById('countdown-ended');
+  const elHeading = document.getElementById('countdown-heading');
+  const elPill = document.getElementById('countdown-date-pill');
+  const elToggle = document.getElementById('cd-test-toggle');
 
   if (!elDays || !elHours || !elMinutes || !elSeconds) return;
+
+  // Start with test mode active so the user can immediately review the ended message
+  let isTestingEnded = true;
+
+  function renderState(ended) {
+    if (ended) {
+      if (elGrid) elGrid.style.display = 'none';
+      if (elHeading) elHeading.style.display = 'none';
+      if (elEnded) elEnded.style.display = 'block';
+      if (elPill) elPill.innerHTML = '<span>December 28, 2026 &bull; DD Retreat, Kochi</span>';
+      if (elToggle) elToggle.innerHTML = '<span>⏱ Switch to Live Countdown</span>';
+    } else {
+      if (elGrid) elGrid.style.display = 'flex';
+      if (elHeading) elHeading.style.display = 'block';
+      if (elEnded) elEnded.style.display = 'none';
+      if (elPill) elPill.innerHTML = '<span>December 28, 2026 &bull; 6:00 PM</span>';
+      if (elToggle) elToggle.innerHTML = '<span>🎉 Preview Ended Celebration Message</span>';
+    }
+  }
+
+  if (elToggle) {
+    elToggle.addEventListener('click', () => {
+      isTestingEnded = !isTestingEnded;
+      renderState(isTestingEnded);
+    });
+  }
 
   function update() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
-    if (distance < 0) {
-      elDays.textContent = '00';
-      elHours.textContent = '00';
-      elMinutes.textContent = '00';
-      elSeconds.textContent = '00';
+    if (isTestingEnded || distance < 0) {
+      renderState(true);
       return;
     }
+
+    renderState(false);
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
     const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));

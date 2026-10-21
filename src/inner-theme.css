@@ -920,6 +920,101 @@ body {
   text-align: center;
 }
 
+/* Countdown Ended Celebratory State */
+.countdown-ended-card {
+  padding: 1rem 0.5rem 0.5rem;
+  text-align: center;
+  animation: fadeIn 0.8s ease-out;
+}
+
+.countdown-ended-motif {
+  font-family: var(--font-cinzel, serif);
+  font-size: 1.25rem;
+  letter-spacing: 0.25em;
+  color: var(--theme-gold-accent) !important;
+  margin-bottom: 0.75rem;
+}
+
+.countdown-ended-title {
+  font-family: var(--font-serif-en) !important;
+  font-size: clamp(1.6rem, 4.2vw, 2.35rem) !important;
+  font-weight: 600 !important;
+  color: var(--theme-text-heading) !important;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+  text-transform: uppercase;
+}
+
+.countdown-ended-subtitle-ml {
+  font-family: var(--font-serif-ml), "Noto Serif Malayalam", serif !important;
+  font-size: clamp(1.15rem, 3vw, 1.45rem) !important;
+  font-weight: 700;
+  color: var(--theme-gold-antique) !important;
+  margin-bottom: 1rem;
+}
+
+.countdown-ended-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  margin: 0.75rem auto 1.15rem;
+  max-width: 200px;
+}
+
+.countdown-ended-divider .divider-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--theme-gold-antique), transparent);
+}
+
+.countdown-ended-divider .divider-diamond {
+  font-size: 0.65rem;
+  color: var(--theme-gold-antique);
+}
+
+.countdown-ended-couple {
+  font-family: var(--font-serif-en) !important;
+  font-size: clamp(1.3rem, 3.2vw, 1.75rem) !important;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  color: var(--theme-text-heading) !important;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.countdown-ended-blessing {
+  font-family: var(--font-serif-en) !important;
+  font-size: clamp(0.98rem, 2.4vw, 1.12rem) !important;
+  font-style: italic;
+  color: var(--theme-text-muted) !important;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+.countdown-test-toggle {
+  margin-top: 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: rgba(184, 142, 62, 0.12);
+  border: 1px dashed var(--theme-gold-antique);
+  border-radius: 20px;
+  padding: 0.35rem 0.85rem;
+  font-size: 0.8rem;
+  color: var(--theme-gold-antique);
+  cursor: pointer;
+  font-family: var(--font-serif-en);
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.countdown-test-toggle:hover {
+  background: var(--theme-gold-antique);
+  color: #FFFFFF;
+}
+
 .countdown-event-date-pill span {
   display: inline-block;
   padding: 0.45rem 1.5rem;
