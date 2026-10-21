@@ -9,7 +9,7 @@ let hasStarted = false;
 
 export function startBackgroundMusic() {
   if (!bgAudio) {
-    bgAudio = document.getElementById('bg-music') || new Audio('/eeran-megham.mp3');
+    bgAudio = document.getElementById('bg-music') || new Audio('/assets/theri-bus-love-bgm-mp3cutnet_Z7eO8adE.mp3');
     if (!bgAudio.id) bgAudio.id = 'bg-music';
     bgAudio.loop = true;
     bgAudio.preload = 'auto';
