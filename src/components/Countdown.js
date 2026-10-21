@@ -5,10 +5,15 @@ export function renderCountdown() {
 
   return `
     <section id="countdown-section" class="countdown-section">
-      <div class="kasavu-card" style="padding: clamp(2rem, 5vw, 3.5rem) 1.5rem; max-width: 720px; margin: 0 auto;">
-        <h2 class="countdown-heading reveal-on-scroll">${texts.countdownHeading}</h2>
+      <div class="kasavu-card countdown-card-inner reveal-on-scroll">
+        <div class="card-corner corner-top-left"></div>
+        <div class="card-corner corner-top-right"></div>
+        <div class="card-corner corner-bottom-left"></div>
+        <div class="card-corner corner-bottom-right"></div>
 
-        <div class="countdown-grid reveal-on-scroll">
+        <h2 class="countdown-heading">${texts.countdownHeading}</h2>
+
+        <div class="countdown-grid">
           <div class="countdown-box">
             <span class="countdown-number" id="cd-days">00</span>
             <span class="countdown-label">Days</span>
@@ -35,6 +40,10 @@ export function renderCountdown() {
             <span class="countdown-label">Seconds</span>
           </div>
         </div>
+
+        <div class="countdown-event-date-pill">
+          <span>December 28, 2026 &bull; 6:00 PM</span>
+        </div>
       </div>
     </section>
   `;
@@ -53,7 +62,7 @@ export function initCountdownTimer() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
-    if (distance <= 0) {
+    if (distance < 0) {
       elDays.textContent = '00';
       elHours.textContent = '00';
       elMinutes.textContent = '00';

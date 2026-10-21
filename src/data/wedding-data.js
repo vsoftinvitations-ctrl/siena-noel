@@ -1,84 +1,80 @@
 /**
- * Kerala Hindu Wedding Digital Invitation Data Configuration
- * Easily editable for multiple clients. Replace placeholders with client details.
+ * Madhuramveppu & Sangeeth Digital Invitation Data Configuration
+ * Noel Binoy & Sisna Maria
  */
 
 export const weddingData = {
   // Couple Information
   bride: {
-    name: "Anjana Menon",
-    malayalamName: "അഞ്ജന മേനോൻ",
-    qualifications: "B.Tech, MS",
+    name: "Sisna Maria",
+    qualifications: "",
     image: "/assets/bride.jpg",
-    bio: "Daughter of our beloved family, embarking on a sacred new chapter of life with grace and devotion.",
+    bio: "Daughter of our beloved family, stepping into a radiant new journey of sweet love and eternal joy.",
     parents: {
-      father: "K. P. Radhakrishnan Menon",
-      mother: "Geetha Radhakrishnan",
-      houseName: "Sreevalsam Tharavadu",
-      city: "Payyanur, Kannur, Kerala"
+      father: "Capt. Karottu Antony Andrews",
+      mother: "Smt. Sweety Suvarna",
+      houseName: "Karottu",
+      city: "Kochi, Kerala"
     }
   },
   groom: {
-    name: "Rahul Nambiar",
-    malayalamName: "രാഹുൽ നമ്പ്യാർ",
-    qualifications: "M.Tech, Software Architect",
+    name: "Noel Binoy",
+    qualifications: "",
     image: null,
-    bio: "Son of our esteemed family, blessed to begin this divine voyage of love, harmony, and togetherness.",
+    bio: "Son of our esteemed family, celebrating the joyous melodies and sweet beginnings of togetherness.",
     parents: {
-      father: "M. V. Balachandran Nambiar",
-      mother: "Shailaja Balachandran",
-      houseName: "Anugraha Illam",
-      city: "Thiruvambady, Thrissur, Kerala"
+      father: "Sri. Binoy Mathew",
+      mother: "Smt. Elza Binoy",
+      houseName: "",
+      city: "Kochi, Kerala"
     }
   },
 
-  // Wedding Muhurtham & Event Details
+  // Event Details: Madhuramveppu & Sangeeth Night
   event: {
-    muhurthamMalayalam: "വിവാഹം",
-    dateDisplay: "Sunday, 15 February 2027",
-    dateMalayalam: "2027 ഫെബ്രുവരി 15, ഞായറാഴ്ച",
-    malayalamKollamEra: "1202 കുംഭം 3 (ഉത്രാടം നക്ഷത്രം)", // Traditional Kollam calendar
-    timeDisplay: "10:30 AM",
-    timeMalayalam: "രാവിലെ 10:30 ന്",
-    muhurthamTimeWindow: "Muhurtham: 10:15 AM – 10:55 AM (മേട ലഗ്നത്തിൽ)",
-    venueName: "Sree Krishna Kalyana Mandapam",
-    venueAddress: "Temple Gate Road, Near Rajarajeshwara Temple",
-    city: "Taliparamba, Kannur, Kerala",
-    googleMapsUrl: "https://maps.google.com/?q=Taliparamba,+Kannur,+Kerala,+India",
-    googleCalendarTitle: "Wedding of Rahul & Anjana",
-    googleCalendarDescription: "You are cordially invited with family to celebrate the auspicious Kerala Hindu wedding of Rahul Nambiar & Anjana Menon.",
+    title: "Madhuraveppu & Sangeeth Night",
+    dateDisplay: "Monday, 28 December 2026",
+    timeDisplay: "6:00 PM onwards",
+    muhurthamTimeWindow: "Madhuraveppu & Sangeeth: 6:00 PM Onwards",
+    venueName: "DD Retreat",
+    venueAddress: "Near Thammanam Junction, Thammanam",
+    city: "Kochi, Ernakulam, Kerala",
+    googleMapsUrl: "https://maps.google.com/?q=DD+Retreat,+Thammanam,+Ernakulam,+Kerala",
+    googleCalendarTitle: "Madhuraveppu & Sangeeth Night of Noel & Sisna",
+    googleCalendarDescription: "You are cordially invited to celebrate the auspicious Madhuraveppu & Sangeeth Night of Noel Binoy and Sisna Maria at DD Retreat, Thammanam.",
     // Target ISO date for the live countdown timer (YYYY-MM-DDTHH:mm:ss)
-    targetCountdownDate: "2027-02-15T10:30:00"
+    targetCountdownDate: "2026-12-28T18:00:00"
   },
 
-  // Sacred Ceremonies Timeline
+  // Ceremonies Timeline
   ceremonies: [
     {
       id: "ceremony-1",
-      malayalamTitle: "നിശ്ചയം",
-      englishTitle: "Engagement & Welcome",
-      time: "10:00 AM",
-      timeMalayalam: "രാവിലെ 10:00 ന്",
-      description: "Auspicious arrival of families, exchange of bridal garland & elders' blessings.",
-      icon: "ring"
+      englishTitle: "Royal Welcome & Gathering",
+      time: "6:00 PM",
+      description: "Traditional ceremonial welcome with floral greetings and festive joy as families unite.",
+      icon: "welcome"
     },
     {
       id: "ceremony-2",
-      malayalamTitle: "വിവാഹം (താലികെട്ട്)",
-      englishTitle: "Wedding Ceremony (Muhurtham)",
-      time: "10:30 AM",
-      timeMalayalam: "രാവിലെ 10:30 ന്",
-      description: "Sacred Thalikettu, exchanging garlands (Varmala) around the glowing Nilavilakku and Sindoor daan.",
-      icon: "lamp"
+      englishTitle: "Madhuramveppu Ritual",
+      time: "6:30 PM",
+      description: "Auspicious traditional sweet-giving ceremony with heartfelt blessings from elders and beloved family.",
+      icon: "sweets"
     },
     {
       id: "ceremony-3",
-      malayalamTitle: "സദ്യ",
-      englishTitle: "Traditional Wedding Feast",
-      time: "12:30 PM",
-      timeMalayalam: "ഉച്ചയ്ക്ക് 12:30 ന്",
-      description: "Grand traditional Kerala vegetarian Sadya served on fresh plantain leaves.",
-      icon: "leaf"
+      englishTitle: "Sangeeth & Musical Celebration",
+      time: "7:30 PM",
+      description: "An enchanting blend of Kerala traditions and soulful Tamil musical rhythms, songs, and joyous celebration.",
+      icon: "music"
+    },
+    {
+      id: "ceremony-4",
+      englishTitle: "Grand Festive Dinner",
+      time: "8:30 PM",
+      description: "Sumptuous celebratory banquet dinner served in honor of our cherished guests.",
+      icon: "feast"
     }
   ],
 
@@ -86,43 +82,34 @@ export const weddingData = {
   galleryImages: [
     {
       src: "/assets/couple.jpg",
-      alt: "Couple walking in temple corridor",
-      caption: "A journey of eternal companionship"
+      alt: "Couple Moments",
+      caption: "A journey of melody and love"
     },
     {
       src: "/assets/details.jpg",
-      alt: "Sacred traditional wedding offerings",
-      caption: "Sacred rituals & auspicious beginnings"
+      alt: "Festive Offerings",
+      caption: "Sweet traditions & vibrant beginnings"
     },
     {
       src: "/assets/bride.jpg",
-      alt: "Bride in traditional Kasavu saree",
-      caption: "The radiant bride adorned in Kerala Kasavu"
+      alt: "Sisna Maria",
+      caption: "Radiant smiles filled with happiness"
     }
   ],
 
-  // Sacred Text & Blessings
+  // Sacred Texts, Poetic Wording & Special Messages
   texts: {
-    guruVandanam: "ശ്രീ ഗുരുഭ്യോ നമഃ",
-    sanskritShloka: [
-      "മംഗളം ഭഗവാൻ വിഷ്ണുഃ",
-      "മംഗളം ഗരുഡധ്വജഃ",
-      "മംഗളം പുണ്ഡരീകാക്ഷഃ",
-      "മംഗളായ തനോ ഹരിഃ"
-    ],
-    elderBlessingsEng: "With the blessings of our elders\nand the grace of the divine",
-    twoHeartsEng: "Two hearts,\none beautiful beginning.",
-    greetingMalayalam: "വിവാഹ മംഗളാശംസകളോടെ",
+    topPoeticTagline: "Celebrations & Sweet Beginnings",
+    eventMainTitle: "മധുരവെപ്പും സംഗീത സന്ധ്യയും",
+    specialPoeticMessage: "കേരളത്തിന്റെ മനോഹരമായ പാരമ്പര്യങ്ങളും തമിഴ് സംസ്കാരത്തിന്റെ ഹൃദ്യമായ സംഗീതത്താളങ്ങളും ഒത്തുചേരുന്ന ഈ മംഗളവേളയിൽ, മധുരം നിറഞ്ഞ ആചാരങ്ങളുടെയും സംഗീതത്തിന്റെയും ആഘോഷത്തിന്റെയും സുന്ദര നിമിഷങ്ങൾ പങ്കിടാൻ നിങ്ങളെ സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു. ഞങ്ങളുടെ ഒരുമിച്ചുള്ള ജീവിതത്തിന്റെ മധുരമായ തുടക്കത്തിന് നിങ്ങളുടെ സാന്നിധ്യവും അനുഗ്രഹങ്ങളും ഈ വേളയെ കൂടുതൽ മനോഹരമാക്കും.",
     coupleIntroHeading: "Together with our families",
-    coupleIntroTagline: "Two souls, one journey, and a lifetime of beautiful moments.",
-    weddingTogethernessQuote: "A wedding is the sacred union of two souls and the joyful coming together of two families—bound by love, cherished traditions, and the blessing of a lifetime of togetherness.",
-    invitationHeadingMalayalam: "വിവാഹത്തിലേക്ക് സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു",
-    invitationSubtitleEng: "With joy in our hearts,\nwe invite you to celebrate our wedding.",
-    familyHeading: "With the blessings of our families",
-    countdownHeading: "Counting the moments...",
-    locationHeadingMalayalam: "വരൂ...\nഈ മംഗള മുഹൂർത്തത്തിന് സാക്ഷികളാകൂ",
-    finalBlessingMalayalam: "നിങ്ങളുടെ സാന്നിധ്യവും അനുഗ്രഹങ്ങളും\nഞങ്ങളുടെ പുതിയ ജീവിതത്തിന്റെ\nഏറ്റവും മനോഹരമായ തുടക്കമായിരിക്കും.",
-    finalBlessingEnglish: "Your presence and blessings\nwill make our beginning even more beautiful.",
+    coupleIntroTagline: "Two souls, melodious rhythms, and a lifetime of sweet moments.",
+    invitationHeading: "Madhuraveppu & Sangeeth Night",
+    invitationSubtitleEng: "With joy in our hearts, we invite you to celebrate our Madhuraveppu & Sangeeth Night.",
+    familyHeading: "നമ്മുടെ കുടുംബങ്ങളുടെ അനുഗ്രഹത്തോടെ",
+    countdownHeading: "മധുരമായ ആഘോഷത്തിലേക്കുള്ള കാത്തിരിപ്പ്...",
+    locationHeading: "Come, Join Us to Celebrate",
+    finalBlessingEnglish: "നിങ്ങളുടെ സാന്നിധ്യവും ഹൃദയംഗമമായ അനുഗ്രഹങ്ങളും ഞങ്ങളുടെ ഈ സവിശേഷ സായാഹ്നത്തെ അവിസ്മരണീയമാക്കും.",
     withLove: "With Love"
   }
 };

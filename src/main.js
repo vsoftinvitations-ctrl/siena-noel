@@ -1,4 +1,5 @@
 import './style.css';
+import './inner-theme.css';
 import { renderPreloader, initPreloader } from './components/Preloader.js';
 import { initRosePetals } from './components/RosePetals.js';
 import { initBackgroundMusic } from './components/BackgroundMusic.js';
@@ -7,7 +8,6 @@ import { renderCoupleSection } from './components/CoupleSection.js';
 import { renderWeddingDetails } from './components/WeddingDetails.js';
 import { renderKeralaVisual } from './components/KeralaVisual.js';
 import { renderCeremonyTimeline } from './components/CeremonyTimeline.js';
-import { renderFamilySection } from './components/FamilySection.js';
 import { renderCountdown, initCountdownTimer } from './components/Countdown.js';
 import { renderGallery, initGalleryCarousel } from './components/Gallery.js';
 import { renderLocationSection } from './components/LocationSection.js';
@@ -23,7 +23,6 @@ document.addEventListener('DOMContentLoaded', () => {
     ${renderWeddingDetails()}
     ${renderKeralaVisual()}
     ${renderCeremonyTimeline()}
-    ${renderFamilySection()}
     ${renderCountdown()}
     ${renderGallery()}
     ${renderLocationSection()}

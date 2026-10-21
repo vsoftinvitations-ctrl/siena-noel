@@ -4,9 +4,9 @@ import { startBackgroundMusic } from './BackgroundMusic.js';
  * Preloader Component with Brittany Signature Script Handwriting Animation
  * Background: /assets/preloder.png
  * Center Writings:
- *   Rahul
+ *   Sisna Maria
  *   &
- *   Anjana
+ *   Noel Binoy
  */
 
 export function renderPreloader() {
@@ -14,7 +14,7 @@ export function renderPreloader() {
     <div id="wedding-preloader" class="wedding-preloader" role="dialog" aria-modal="true" aria-label="Wedding Invitation Preloader">
       <!-- Fullscreen Background Image with Ken Burns effect and cinematic vignette -->
       <div class="preloader-bg-media">
-        <img src="/assets/preloder.png" alt="Rahul & Anjana" class="preloader-bg-img" />
+        <img src="/assets/preloder.png" alt="Sisna Maria & Noel Binoy" class="preloader-bg-img" />
         <div class="preloader-overlay"></div>
       </div>
 
@@ -32,12 +32,10 @@ export function renderPreloader() {
       <div class="preloader-gate-wrapper" id="preloader-gate-wrapper">
         <div class="preloader-gate-content">
           <div class="preloader-gate-badge">
-            <span class="preloader-tagline">WEDDING INVITATION</span>
+            <span class="preloader-tagline">MADHURAMVEPPU</span>
           </div>
           <button class="preloader-open-pill-btn ready-pulse" id="preloader-enter-btn" aria-label="Tap to Open Invitation">
-            <span class="btn-sparkle">✦</span>
             <span>Tap to Open</span>
-            <span class="btn-sparkle">✦</span>
           </button>
         </div>
       </div>
@@ -46,14 +44,14 @@ export function renderPreloader() {
       <div class="preloader-content" id="preloader-content-box">
         <!-- Top Inscription -->
         <div class="preloader-top-badge">
-          <span class="preloader-tagline">WEDDING INVITATION</span>
+          <span class="preloader-tagline">MADHURAMVEPPU</span>
         </div>
 
         <!-- Brittany Signature Script Handwriting Animation Container -->
         <div class="preloader-script-container" id="preloader-script-box">
-          <!-- Line 1: Rahul -->
-          <div class="script-line script-rahul">
-            <span class="script-text">Rahul</span>
+          <!-- Line 1: Sisna Maria -->
+          <div class="script-line script-rahul script-sisna">
+            <span class="script-text">Sisna Maria</span>
             <span class="calligraphy-pen-spark" id="spark-rahul"></span>
           </div>
 
@@ -62,9 +60,9 @@ export function renderPreloader() {
             <span class="script-text">&amp;</span>
           </div>
 
-          <!-- Line 3: Anjana -->
-          <div class="script-line script-anjana">
-            <span class="script-text">Anjana</span>
+          <!-- Line 3: Noel Binoy -->
+          <div class="script-line script-anjana script-noel">
+            <span class="script-text">Noel Binoy</span>
             <span class="calligraphy-pen-spark" id="spark-anjana"></span>
           </div>
 
@@ -86,7 +84,7 @@ export function renderPreloader() {
 
         <!-- Subtitle & Date -->
         <div class="preloader-subtext">
-          <p class="preloader-date">15 . FEBRUARY . 2027</p>
+          <p class="preloader-date">28 DECEMBER 2026</p>
         </div>
       </div>
     </div>

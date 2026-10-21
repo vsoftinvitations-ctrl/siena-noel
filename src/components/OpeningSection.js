@@ -24,12 +24,12 @@ export function renderOpeningSection() {
 
           <!-- Minimal Standard Pre-title -->
           <div class="opening-pretitle reveal-on-scroll revealed reveal-delay-1">
-            Wedding Invitation
+            MADHURAMVEPPU
           </div>
 
           <!-- Elegant Standard Invitation Line -->
           <p class="opening-blessing-en reveal-on-scroll revealed reveal-delay-1">
-            Together with our families, we joyfully invite you to celebrate the wedding of
+            ഞങ്ങളുടെ കുടുംബങ്ങളോടൊപ്പം, മധുരംവേപ്പ് ആഘോഷിക്കാൻ നിങ്ങളെ സന്തോഷപൂർവ്വം ക്ഷണിക്കുന്നു
           </p>
 
           <!-- Couple Names (Central Visual Focus) -->
@@ -68,11 +68,40 @@ export function renderOpeningSection() {
 export function initOpeningInteractions() {
   const scrollBtn = document.getElementById('scroll-to-invitation');
   if (scrollBtn) {
+    let scrolledOnce = false;
+
+    function hideExplorePermanently() {
+      if (scrolledOnce) return;
+      scrolledOnce = true;
+      scrollBtn.classList.add('explore-btn-hidden');
+      window.removeEventListener('scroll', onScrollCheck);
+      window.removeEventListener('wheel', onScrollCheck);
+      window.removeEventListener('touchmove', onScrollCheck);
+    }
+
+    function onScrollCheck() {
+      const scrollPos = window.scrollY || document.documentElement.scrollTop || document.body.scrollTop || 0;
+      if (scrollPos > 10) {
+        hideExplorePermanently();
+      }
+    }
+
     scrollBtn.addEventListener('click', () => {
+      hideExplorePermanently();
       const target = document.getElementById('couple-introduction');
       if (target) {
         target.scrollIntoView({ behavior: 'smooth' });
       }
     });
+
+    window.addEventListener('scroll', onScrollCheck, { passive: true });
+    window.addEventListener('wheel', onScrollCheck, { passive: true });
+    window.addEventListener('touchmove', onScrollCheck, { passive: true });
+
+    // If the browser loaded with existing scroll position (e.g. scroll restore)
+    const initialScroll = window.scrollY || document.documentElement.scrollTop || 0;
+    if (initialScroll > 10) {
+      hideExplorePermanently();
+    }
   }
 }

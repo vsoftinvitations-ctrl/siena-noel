@@ -5,11 +5,6 @@ export function renderClosingSection() {
 
   return `
     <footer id="closing-blessings" class="closing-section">
-      <!-- Sacred Inscription in Malayalam -->
-      <div class="closing-blessing-ml reveal-on-scroll">
-        ${texts.finalBlessingMalayalam}
-      </div>
-
       <!-- Sacred Inscription in English -->
       <div class="closing-blessing-en reveal-on-scroll">
         ${texts.finalBlessingEnglish}
@@ -25,14 +20,9 @@ export function renderClosingSection() {
       </div>
 
       <div class="closing-couple-names reveal-on-scroll">
-        <span>${groom.name}</span>
+        <span>Noel</span>
         <span class="text-gold" style="font-style: italic; font-weight: 400;"> &amp; </span>
-        <span>${bride.name}</span>
-      </div>
-
-      <!-- Final Auspicious Greeting -->
-      <div class="closing-final-greeting reveal-on-scroll font-ml">
-        ${texts.greetingMalayalam}
+        <span>Sisna</span>
       </div>
     </footer>
   `;
