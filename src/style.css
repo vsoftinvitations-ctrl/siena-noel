@@ -2323,7 +2323,16 @@ body.preloader-active #app>*:not(#wedding-preloader) {
   justify-content: center;
 }
 
-.preloader-gate-badge .preloader-tagline,
+.preloader-gate-badge .preloader-tagline {
+  font-family: var(--font-cinzel, serif);
+  font-size: 0.88rem;
+  letter-spacing: 0.35em;
+  color: #111111 !important;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: none;
+}
+
 .preloader-top-badge .preloader-tagline {
   font-family: var(--font-cinzel, serif);
   font-size: 0.88rem;
