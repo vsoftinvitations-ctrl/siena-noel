@@ -45,7 +45,6 @@ export function renderCountdown() {
         <div class="countdown-ended-card" id="countdown-ended" style="display: none;">
           <div class="countdown-ended-motif">✧ ✝ ✧</div>
           <h3 class="countdown-ended-title">The Celebration Has Begun!</h3>
-          <p class="countdown-ended-subtitle-ml">ആഘോഷം ആരംഭിച്ചു</p>
           <div class="countdown-ended-divider">
             <span class="divider-line"></span>
             <span class="divider-diamond">&#9670;</span>
