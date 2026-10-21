@@ -13,8 +13,8 @@ export const weddingData = {
     parents: {
       father: "Capt. Karottu Antony Andrews",
       mother: "Smt. Sweety Suvarna",
-      houseName: "Karottu",
-      city: "Kochi, Kerala"
+      houseName: "Karottu house",
+      city: "Nettoor, Kochi"
     }
   },
   groom: {
