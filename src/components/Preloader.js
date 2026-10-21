@@ -160,7 +160,7 @@ export function initPreloader() {
     }, 1850);
   }
 
-  // Click on "Tap to Open" button or anywhere on screen
+  // Only the "Tap to Open" button initiates opening
   const enterBtn = document.getElementById('preloader-enter-btn');
   if (enterBtn) {
     enterBtn.addEventListener('click', (e) => {
@@ -169,14 +169,19 @@ export function initPreloader() {
     });
   }
 
-  preloader.addEventListener('click', () => {
-    handleTapToOpen();
+  // Once user has intentionally opened, allow tapping during reveal to skip ahead
+  preloader.addEventListener('click', (e) => {
+    if (stage === 'revealing') {
+      dismissPreloader();
+    }
   });
 
-  // Also support keyboard Enter/Space/Escape
+  // Support keyboard Enter/Space
   window.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ') {
+    if (stage === 'waiting' && (e.key === 'Enter' || e.key === ' ')) {
       handleTapToOpen();
+    } else if (stage === 'revealing' && (e.key === 'Escape' || e.key === 'Enter' || e.key === ' ')) {
+      dismissPreloader();
     }
   });
 }
