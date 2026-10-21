@@ -231,9 +231,10 @@ body {
 }
 
 .couple-siblings-line {
-  margin-top: 0.65rem !important;
+  margin-top: 0.25rem !important;
+  margin-bottom: 0.35rem !important;
   font-family: var(--font-serif-en) !important;
-  font-size: 0.96rem !important;
+  font-size: 0.98rem !important;
   color: var(--theme-text-subheading) !important;
   letter-spacing: 0.02em;
   display: flex;

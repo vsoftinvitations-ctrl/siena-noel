@@ -34,15 +34,15 @@ export function renderCoupleSection() {
           
           <div class="couple-card-parents">
             <p class="couple-parents-line">${brideParentText}</p>
-            ${bride.parents.houseName 
-              ? `<p class="couple-address-line text-muted">${bride.parents.houseName}, ${bride.parents.city}</p>` 
-              : (bride.parents.city ? `<p class="couple-address-line text-muted">${bride.parents.city}</p>` : '')}
             ${bride.siblings && bride.siblings.length ? `
               <p class="couple-siblings-line">
                 <span class="siblings-label">${bride.siblings.length > 1 ? 'Siblings:' : 'Sibling:'}</span>
                 <span class="siblings-names">${bride.siblings.join(' &amp; ')}</span>
               </p>
             ` : ''}
+            ${bride.parents.houseName 
+              ? `<p class="couple-address-line text-muted">${bride.parents.houseName}, ${bride.parents.city}</p>` 
+              : (bride.parents.city ? `<p class="couple-address-line text-muted">${bride.parents.city}</p>` : '')}
           </div>
         </div>
 
@@ -63,13 +63,13 @@ export function renderCoupleSection() {
           
           <div class="couple-card-parents">
             <p class="couple-parents-line">${groomParentText}</p>
-            ${groom.parents.city ? `<p class="couple-address-line text-muted">${groom.parents.city}</p>` : ''}
             ${groom.siblings && groom.siblings.length ? `
               <p class="couple-siblings-line">
                 <span class="siblings-label">${groom.siblings.length > 1 ? 'Siblings:' : 'Sibling:'}</span>
                 <span class="siblings-names">${groom.siblings.join(' &amp; ')}</span>
               </p>
             ` : ''}
+            ${groom.parents.city ? `<p class="couple-address-line text-muted">${groom.parents.city}</p>` : ''}
           </div>
         </div>
       </div>
