@@ -26,22 +26,22 @@ export const weddingData = {
       father: "Sri. Binoy Mathew",
       mother: "Smt. Elza Binoy",
       houseName: "",
-      city: "Kochi, Kerala"
+      city: "Ponkunnam Pala, Kerala"
     }
   },
 
   // Event Details: Madhuramveppu & Sangeeth Night
   event: {
-    title: "Madhuraveppu & Sangeeth Night",
+    title: "Madhuramveppu & Sangeeth Night",
     dateDisplay: "Monday, 28 December 2026",
     timeDisplay: "6:00 PM onwards",
-    muhurthamTimeWindow: "Madhuraveppu & Sangeeth: 6:00 PM Onwards",
+    muhurthamTimeWindow: "Madhuramveppu & Sangeeth: 6:00 PM Onwards",
     venueName: "DD Retreat",
     venueAddress: "Near Thammanam Junction, Thammanam",
     city: "Kochi, Ernakulam, Kerala",
     googleMapsUrl: "https://maps.google.com/?q=DD+Retreat,+Thammanam,+Ernakulam,+Kerala",
-    googleCalendarTitle: "Madhuraveppu & Sangeeth Night of Sisna & Noel",
-    googleCalendarDescription: "You are cordially invited to celebrate the auspicious Madhuraveppu & Sangeeth Night of Sisna Maria and Noel Binoy at DD Retreat, Thammanam.",
+    googleCalendarTitle: "Madhuramveppu & Sangeeth Night of Sisna & Noel",
+    googleCalendarDescription: "You are cordially invited to celebrate the auspicious Madhuramveppu & Sangeeth Night of Sisna Maria and Noel Binoy at DD Retreat, Thammanam.",
     // Target ISO date for the live countdown timer (YYYY-MM-DDTHH:mm:ss)
     targetCountdownDate: "2026-12-28T18:00:00"
   },
@@ -100,12 +100,12 @@ export const weddingData = {
   // Sacred Texts, Poetic Wording & Special Messages
   texts: {
     topPoeticTagline: "Celebrations & Sweet Beginnings",
-    eventMainTitle: "മധുരവെപ്പും സംഗീത സന്ധ്യയും",
+    eventMainTitle: "മധുരംവെപ്പും സംഗീത സന്ധ്യയും",
     specialPoeticMessage: "മനോഹരമായ പാരമ്പര്യങ്ങളും തമിഴ് സംസ്കാരത്തിന്റെ ഹൃദ്യമായ സംഗീതത്താളങ്ങളും ഒത്തുചേരുന്ന ഈ മംഗളവേളയിൽ, മധുരം നിറഞ്ഞ ആചാരങ്ങളുടെയും സംഗീതത്തിന്റെയും ആഘോഷത്തിന്റെയും സുന്ദര നിമിഷങ്ങൾ പങ്കിടാൻ നിങ്ങളെ സ്നേഹപൂർവ്വം ക്ഷണിക്കുന്നു. ഞങ്ങളുടെ ഒരുമിച്ചുള്ള ജീവിതത്തിന്റെ മധുരമായ തുടക്കത്തിന് നിങ്ങളുടെ സാന്നിധ്യവും അനുഗ്രഹങ്ങളും ഈ വേളയെ കൂടുതൽ മനോഹരമാക്കും.",
     coupleIntroHeading: "Together with our families",
     coupleIntroTagline: "Two souls, melodious rhythms, and a lifetime of sweet moments.",
-    invitationHeading: "Madhuraveppu & Sangeeth Night",
-    invitationSubtitleEng: "With joy in our hearts, we invite you to celebrate our Madhuraveppu & Sangeeth Night.",
+    invitationHeading: "Madhuramveppu & Sangeeth Night",
+    invitationSubtitleEng: "With joy in our hearts, we invite you to celebrate our Madhuramveppu & Sangeeth Night.",
     familyHeading: "നമ്മുടെ കുടുംബങ്ങളുടെ അനുഗ്രഹത്തോടെ",
     countdownHeading: "മധുരമായ ആഘോഷത്തിലേക്കുള്ള കാത്തിരിപ്പ്...",
     locationHeading: "Come, Join Us to Celebrate",
