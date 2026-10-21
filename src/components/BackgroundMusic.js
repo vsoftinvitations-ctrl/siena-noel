@@ -1,7 +1,7 @@
 /**
  * Background Music Controller
- * Plays "Eeran Megham" violin instrumental automatically upon opening the invitation.
- * No visible music player icon/button as requested.
+ * Plays "Theri Bus Love BGM" strictly when the user clicks "Tap to Open".
+ * No page-load autoplay or random screen touch triggers.
  */
 
 let bgAudio = null;
@@ -21,45 +21,29 @@ export function startBackgroundMusic() {
   if (playPromise !== undefined) {
     playPromise.then(() => {
       hasStarted = true;
-      removeInteractionListeners();
       
       // Gentle smooth fade-in to pleasant volume
       let vol = 0;
       bgAudio.volume = 0;
       const fadeTimer = setInterval(() => {
-        vol = Math.min(0.8, vol + 0.08);
+        vol = Math.min(0.85, vol + 0.08);
         bgAudio.volume = vol;
-        if (vol >= 0.8) {
+        if (vol >= 0.85) {
           clearInterval(fadeTimer);
         }
-      }, 60);
+      }, 50);
     }).catch(() => {
-      // Browser autoplay policy blocked unmuted audio until user interaction
+      // Audio playback handling
     });
   }
 }
 
-function handleFirstInteraction() {
-  startBackgroundMusic();
-}
-
-function removeInteractionListeners() {
-  const events = ['click', 'touchstart', 'touchend', 'pointerdown', 'keydown', 'scroll'];
-  events.forEach((evt) => {
-    window.removeEventListener(evt, handleFirstInteraction, { capture: true });
-    document.removeEventListener(evt, handleFirstInteraction, { capture: true });
-  });
-}
-
 export function initBackgroundMusic() {
-  // 1. Try to autoplay immediately when link opens
-  startBackgroundMusic();
-
-  // 2. Also register listeners on any first user interaction (click, tap, scroll, key)
-  // in case the browser enforces strict user gesture policies before allowing audio
-  const events = ['click', 'touchstart', 'touchend', 'pointerdown', 'keydown', 'scroll'];
-  events.forEach((evt) => {
-    window.addEventListener(evt, handleFirstInteraction, { capture: true, passive: true, once: true });
-    document.addEventListener(evt, handleFirstInteraction, { capture: true, passive: true, once: true });
-  });
+  // Ensure audio is initialized and paused until user explicitly clicks "Tap to Open"
+  bgAudio = document.getElementById('bg-music');
+  if (bgAudio) {
+    bgAudio.pause();
+    bgAudio.currentTime = 0;
+  }
 }
+

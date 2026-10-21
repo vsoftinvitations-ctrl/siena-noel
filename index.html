@@ -42,58 +42,16 @@
     <link rel="shortcut icon" href="/favicon.png" />
   </head>
   <body>
-    <!-- Hidden Background Audio (Starts playing as soon as link opens) -->
+    <!-- Hidden Background Audio (Plays strictly when user taps "Tap to Open") -->
     <audio
       id="bg-music"
       src="/assets/theri-bus-love-bgm-mp3cutnet_Z7eO8adE.mp3"
-      autoplay
       loop
       playsinline
       webkit-playsinline
       preload="auto"
       style="display:none; position:fixed; pointer-events:none; opacity:0; width:0; height:0;"
     ></audio>
-
-    <script>
-      (function () {
-        var audio = document.getElementById('bg-music');
-        if (!audio) return;
-        audio.volume = 0.85;
-
-        function attemptPlay() {
-          if (audio && audio.paused) {
-            var playPromise = audio.play();
-            if (playPromise !== undefined) {
-              playPromise.then(function () {
-                cleanup();
-              }).catch(function () {});
-            }
-          }
-        }
-
-        function cleanup() {
-          ['click', 'touchstart', 'touchend', 'pointerdown', 'mousemove', 'wheel', 'scroll', 'keydown'].forEach(function (e) {
-            window.removeEventListener(e, attemptPlay, { capture: true });
-            document.removeEventListener(e, attemptPlay, { capture: true });
-          });
-        }
-
-        // 1. Immediate trigger as browser parses HTML
-        attemptPlay();
-
-        // 2. Lifecycle triggers
-        document.addEventListener('DOMContentLoaded', attemptPlay);
-        window.addEventListener('load', attemptPlay);
-        window.addEventListener('pageshow', attemptPlay);
-        window.addEventListener('focus', attemptPlay);
-
-        // 3. Any micro-motion triggers (mousemove, wheel, scroll, touch, key)
-        ['click', 'touchstart', 'touchend', 'pointerdown', 'mousemove', 'wheel', 'scroll', 'keydown'].forEach(function (e) {
-          window.addEventListener(e, attemptPlay, { capture: true, passive: true });
-          document.addEventListener(e, attemptPlay, { capture: true, passive: true });
-        });
-      })();
-    </script>
 
     <div id="app"></div>
     <script type="module" src="/src/main.js"></script>
