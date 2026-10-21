@@ -59,13 +59,6 @@ export function renderCountdown() {
         <div class="countdown-event-date-pill" id="countdown-date-pill">
           <span>December 28, 2026 &bull; 6:00 PM</span>
         </div>
-
-        <!-- Interactive Testing Button to preview both states -->
-        <div style="text-align: center; margin-top: 0.85rem;">
-          <button type="button" class="countdown-test-toggle" id="cd-test-toggle" title="Click to test active timer vs ended message">
-            <span>⇄ Switch to Live Countdown</span>
-          </button>
-        </div>
       </div>
     </section>
   `;
@@ -81,12 +74,8 @@ export function initCountdownTimer() {
   const elEnded = document.getElementById('countdown-ended');
   const elHeading = document.getElementById('countdown-heading');
   const elPill = document.getElementById('countdown-date-pill');
-  const elToggle = document.getElementById('cd-test-toggle');
 
   if (!elDays || !elHours || !elMinutes || !elSeconds) return;
-
-  // Start with test mode active so the user can immediately review the ended message
-  let isTestingEnded = true;
 
   function renderState(ended) {
     if (ended) {
@@ -94,28 +83,19 @@ export function initCountdownTimer() {
       if (elHeading) elHeading.style.display = 'none';
       if (elEnded) elEnded.style.display = 'block';
       if (elPill) elPill.innerHTML = '<span>December 28, 2026 &bull; DD Retreat, Kochi</span>';
-      if (elToggle) elToggle.innerHTML = '<span>⏱ Switch to Live Countdown</span>';
     } else {
       if (elGrid) elGrid.style.display = 'flex';
       if (elHeading) elHeading.style.display = 'block';
       if (elEnded) elEnded.style.display = 'none';
       if (elPill) elPill.innerHTML = '<span>December 28, 2026 &bull; 6:00 PM</span>';
-      if (elToggle) elToggle.innerHTML = '<span>🎉 Preview Ended Celebration Message</span>';
     }
-  }
-
-  if (elToggle) {
-    elToggle.addEventListener('click', () => {
-      isTestingEnded = !isTestingEnded;
-      renderState(isTestingEnded);
-    });
   }
 
   function update() {
     const now = new Date().getTime();
     const distance = targetDate - now;
 
-    if (isTestingEnded || distance < 0) {
+    if (distance < 0) {
       renderState(true);
       return;
     }
