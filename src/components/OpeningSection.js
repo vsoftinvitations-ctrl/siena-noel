@@ -19,15 +19,6 @@ export function renderOpeningSection() {
         <div class="opening-border-motif"></div>
 
         <div class="opening-content">
-          <!-- Minimal Royal Monogram Crest -->
-          <div class="opening-monogram reveal-on-scroll revealed">
-            <div class="monogram-seal">
-              <span class="monogram-letter">${groomInitial}</span>
-              <span class="monogram-symbol">&amp;</span>
-              <span class="monogram-letter">${brideInitial}</span>
-            </div>
-          </div>
-
           <!-- Minimal Standard Pre-title -->
           <div class="opening-pretitle reveal-on-scroll revealed reveal-delay-1">
             MADHURAMVEPPU
@@ -35,14 +26,14 @@ export function renderOpeningSection() {
 
           <!-- Elegant Standard Invitation Line -->
           <p class="opening-blessing-en reveal-on-scroll revealed reveal-delay-1">
-            ഞങ്ങളുടെ കുടുംബങ്ങളോടൊപ്പം, മധുരംവേപ്പ് ആഘോഷിക്കാൻ നിങ്ങളെ സന്തോഷപൂർവ്വം ക്ഷണിക്കുന്നു
+            We joyfully invite you to celebrate Madhuramveppu with our families
           </p>
 
           <!-- Couple Names (Central Visual Focus) -->
           <h1 class="opening-couple-names reveal-on-scroll revealed reveal-delay-2">
-            <span class="couple-name groom-name">${groom.name}</span>
-            <span class="opening-couple-ampersand">&amp;</span>
             <span class="couple-name bride-name">${bride.name}</span>
+            <span class="opening-couple-ampersand">&amp;</span>
+            <span class="couple-name groom-name">${groom.name}</span>
           </h1>
 
           <!-- Date & Location Minimal Standard Block -->

@@ -40,8 +40,8 @@ export const weddingData = {
     venueAddress: "Near Thammanam Junction, Thammanam",
     city: "Kochi, Ernakulam, Kerala",
     googleMapsUrl: "https://maps.google.com/?q=DD+Retreat,+Thammanam,+Ernakulam,+Kerala",
-    googleCalendarTitle: "Madhuraveppu & Sangeeth Night of Noel & Sisna",
-    googleCalendarDescription: "You are cordially invited to celebrate the auspicious Madhuraveppu & Sangeeth Night of Noel Binoy and Sisna Maria at DD Retreat, Thammanam.",
+    googleCalendarTitle: "Madhuraveppu & Sangeeth Night of Sisna & Noel",
+    googleCalendarDescription: "You are cordially invited to celebrate the auspicious Madhuraveppu & Sangeeth Night of Sisna Maria and Noel Binoy at DD Retreat, Thammanam.",
     // Target ISO date for the live countdown timer (YYYY-MM-DDTHH:mm:ss)
     targetCountdownDate: "2026-12-28T18:00:00"
   },

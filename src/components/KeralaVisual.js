@@ -55,7 +55,7 @@ export function renderKeralaVisual() {
 
           <div class="childhood-keepsake-meta">
             <span class="childhood-tagline">Sweet Childhood Memories</span>
-            <span class="childhood-caption-names">Noel &amp; Sisna</span>
+            <span class="childhood-caption-names">Sisna &amp; Noel</span>
           </div>
         </div>
 

@@ -20,9 +20,9 @@ export function renderClosingSection() {
       </div>
 
       <div class="closing-couple-names reveal-on-scroll">
-        <span>Noel</span>
-        <span class="text-gold" style="font-style: italic; font-weight: 400;"> &amp; </span>
         <span>Sisna</span>
+        <span class="text-gold" style="font-style: italic; font-weight: 400;"> &amp; </span>
+        <span>Noel</span>
       </div>
     </footer>
   `;

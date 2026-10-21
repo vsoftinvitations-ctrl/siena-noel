@@ -17,29 +17,8 @@ export function renderCoupleSection() {
       </h2>
 
       <div class="couple-cards-container">
-        <!-- Groom Card -->
-        <div class="kasavu-card couple-card reveal-on-scroll reveal-delay-1">
-          <div class="card-corner corner-top-left"></div>
-          <div class="card-corner corner-top-right"></div>
-          <div class="card-corner corner-bottom-left"></div>
-          <div class="card-corner corner-bottom-right"></div>
-
-          <div class="couple-card-badge">
-            <span>വരൻ</span>
-          </div>
-
-          <h3 class="couple-name-title">${groom.name}</h3>
-          
-          <div class="couple-card-divider"></div>
-          
-          <div class="couple-card-parents">
-            <p class="couple-parents-line">${groomParentText}</p>
-            ${groom.parents.city ? `<p class="couple-address-line text-muted">${groom.parents.city}</p>` : ''}
-          </div>
-        </div>
-
         <!-- Bride Card -->
-        <div class="kasavu-card couple-card reveal-on-scroll reveal-delay-2">
+        <div class="kasavu-card couple-card reveal-on-scroll reveal-delay-1">
           <div class="card-corner corner-top-left"></div>
           <div class="card-corner corner-top-right"></div>
           <div class="card-corner corner-bottom-left"></div>
@@ -58,6 +37,27 @@ export function renderCoupleSection() {
             ${bride.parents.houseName 
               ? `<p class="couple-address-line text-muted">${bride.parents.houseName}, ${bride.parents.city}</p>` 
               : (bride.parents.city ? `<p class="couple-address-line text-muted">${bride.parents.city}</p>` : '')}
+          </div>
+        </div>
+
+        <!-- Groom Card -->
+        <div class="kasavu-card couple-card reveal-on-scroll reveal-delay-2">
+          <div class="card-corner corner-top-left"></div>
+          <div class="card-corner corner-top-right"></div>
+          <div class="card-corner corner-bottom-left"></div>
+          <div class="card-corner corner-bottom-right"></div>
+
+          <div class="couple-card-badge">
+            <span>വരൻ</span>
+          </div>
+
+          <h3 class="couple-name-title">${groom.name}</h3>
+          
+          <div class="couple-card-divider"></div>
+          
+          <div class="couple-card-parents">
+            <p class="couple-parents-line">${groomParentText}</p>
+            ${groom.parents.city ? `<p class="couple-address-line text-muted">${groom.parents.city}</p>` : ''}
           </div>
         </div>
       </div>
