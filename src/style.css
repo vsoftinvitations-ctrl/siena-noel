@@ -245,11 +245,12 @@ section {
   position: relative;
   width: 100%;
   max-width: 620px;
-  min-height: calc(100vh - 5rem);
   background-color: #FAF5EE;
-  background-image: url('/assets/opening-bg.jpg'), url('/assets/%20-2.jpg');
+  background-image: 
+    linear-gradient(180deg, rgba(250, 245, 238, 0.76) 0%, rgba(250, 245, 238, 0.62) 35%, rgba(250, 245, 238, 0.86) 80%, rgba(250, 245, 238, 0.95) 100%),
+    url('/assets/opening-bg.png');
   background-repeat: no-repeat;
-  background-position: center center;
+  background-position: center top;
   background-size: cover;
   border-radius: 18px;
   box-shadow: 0 20px 60px rgba(61, 42, 27, 0.16);

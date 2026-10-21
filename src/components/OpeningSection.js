@@ -10,6 +10,12 @@ export function renderOpeningSection() {
   return `
     <section class="opening-section" id="opening">
       <div class="opening-card-container">
+        <!-- 4 Antique Gold Corner Filigrees -->
+        <div class="card-corner corner-top-left"></div>
+        <div class="card-corner corner-top-right"></div>
+        <div class="card-corner corner-bottom-left"></div>
+        <div class="card-corner corner-bottom-right"></div>
+
         <div class="opening-border-motif"></div>
 
         <div class="opening-content">
