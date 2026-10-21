@@ -41,8 +41,8 @@ export const weddingData = {
   event: {
     title: "Madhuramveppu & Sangeeth Night",
     dateDisplay: "Monday, 28 December 2026",
-    timeDisplay: "6:00 PM onwards",
-    muhurthamTimeWindow: "Madhuramveppu & Sangeeth: 6:00 PM Onwards",
+    timeDisplay: "6:30 PM onwards",
+    muhurthamTimeWindow: "Madhuramveppu & Sangeeth: 6:30 PM Onwards",
     venueName: "DD Retreat",
     venueAddress: "Near Thammanam Junction, Thammanam",
     city: "Kochi, Ernakulam, Kerala",
@@ -50,7 +50,7 @@ export const weddingData = {
     googleCalendarTitle: "Madhuramveppu & Sangeeth Night of Sisna & Noel",
     googleCalendarDescription: "You are cordially invited to celebrate the auspicious Madhuramveppu & Sangeeth Night of Sisna Maria and Noel Binoy at DD Retreat, Thammanam.",
     // Target ISO date for the live countdown timer (YYYY-MM-DDTHH:mm:ss)
-    targetCountdownDate: "2026-12-28T18:00:00"
+    targetCountdownDate: "2026-12-28T18:30:00"
   },
 
   // Ceremonies Timeline
@@ -58,14 +58,14 @@ export const weddingData = {
     {
       id: "ceremony-1",
       englishTitle: "Royal Welcome & Gathering",
-      time: "6:00 PM",
+      time: "6:30 PM",
       description: "Traditional ceremonial welcome with floral greetings and festive joy as families unite.",
       icon: "welcome"
     },
     {
       id: "ceremony-2",
       englishTitle: "Madhuramveppu Ritual",
-      time: "6:30 PM",
+      time: "7:00 PM",
       description: "Auspicious traditional sweet-giving ceremony with heartfelt blessings from elders and beloved family.",
       icon: "sweets"
     },
@@ -79,7 +79,7 @@ export const weddingData = {
     {
       id: "ceremony-4",
       englishTitle: "Grand Festive Dinner",
-      time: "8:30 PM",
+      time: "Till 9:30 PM",
       description: "Sumptuous celebratory banquet dinner served in honor of our cherished guests.",
       icon: "feast"
     }

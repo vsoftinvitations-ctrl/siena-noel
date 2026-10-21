@@ -3,8 +3,8 @@ import { weddingData } from '../data/wedding-data.js';
 export function renderWeddingDetails() {
   const { texts, event } = weddingData;
 
-  // Google Calendar URL generator: Dec 28, 2026 6:00 PM IST (12:30 UTC)
-  const startDateFormatted = "20261228T123000Z";
+  // Google Calendar URL generator: Dec 28, 2026 6:30 PM IST (13:00 UTC)
+  const startDateFormatted = "20261228T130000Z";
   const endDateFormatted = "20261228T173000Z";
   const gcalUrl = `https://calendar.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(event.googleCalendarTitle)}&dates=${startDateFormatted}/${endDateFormatted}&details=${encodeURIComponent(event.googleCalendarDescription)}&location=${encodeURIComponent(event.venueName + ', ' + event.city)}`;
 

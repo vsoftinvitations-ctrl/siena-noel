@@ -57,7 +57,7 @@ export function renderCountdown() {
         </div>
 
         <div class="countdown-event-date-pill" id="countdown-date-pill">
-          <span>December 28, 2026 &bull; 6:00 PM</span>
+          <span>December 28, 2026 &bull; 6:30 PM</span>
         </div>
       </div>
     </section>
@@ -87,7 +87,7 @@ export function initCountdownTimer() {
       if (elGrid) elGrid.style.display = 'flex';
       if (elHeading) elHeading.style.display = 'block';
       if (elEnded) elEnded.style.display = 'none';
-      if (elPill) elPill.innerHTML = '<span>December 28, 2026 &bull; 6:00 PM</span>';
+      if (elPill) elPill.innerHTML = '<span>December 28, 2026 &bull; 6:30 PM</span>';
     }
   }
 
