@@ -13,7 +13,7 @@ export const weddingData = {
     parents: {
       father: "Capt. Karottu Antony Andrews",
       mother: "Smt. Sweety Suvarna",
-      houseName: "Karottu house",
+      houseName: "",
       city: "Nettoor, Kochi"
     }
   },
@@ -26,7 +26,7 @@ export const weddingData = {
       father: "Sri. Binoy Mathew",
       mother: "Smt. Elza Binoy",
       houseName: "",
-      city: "Ponkunnam Pala, Kerala"
+      city: "Ponkunnam, Pala"
     }
   },
 
