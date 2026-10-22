@@ -447,6 +447,13 @@ section:not(.opening-section) {
   margin-bottom: 0.35rem;
 }
 
+.num-28 {
+  font-family: var(--font-cinzel, 'Cinzel', serif);
+  font-weight: 600;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 .opening-venue-text {
   font-family: var(--font-serif-en);
   font-size: clamp(0.9rem, 2.3vw, 1.02rem);

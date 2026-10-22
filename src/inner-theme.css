@@ -541,6 +541,13 @@ body {
   color: var(--theme-text-heading) !important;
 }
 
+.num-28 {
+  font-family: var(--font-cinzel, 'Cinzel', serif) !important;
+  font-weight: 600 !important;
+  display: inline-block;
+  vertical-align: baseline;
+}
+
 .details-val-secondary {
   font-size: 0.96rem !important;
   color: var(--theme-text-muted) !important;

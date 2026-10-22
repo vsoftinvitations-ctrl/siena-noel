@@ -40,9 +40,9 @@ export const weddingData = {
   // Event Details: Madhuramveppu & Sangeeth Night
   event: {
     title: "Madhuramveppu & Sangeeth Night",
-    dateDisplay: "Monday, 28 December 2026",
-    timeDisplay: "6:30 PM onwards",
-    muhurthamTimeWindow: "Madhuramveppu & Sangeeth: 6:30 PM Onwards",
+    dateDisplay: 'Monday, <span class="num-28">28</span> December 2026',
+    timeDisplay: "6:30 PM - 9:00 PM",
+    muhurthamTimeWindow: "",
     venueName: "DD Retreat",
     venueAddress: "Near Thammanam Junction, Thammanam",
     city: "Kochi, Ernakulam, Kerala",
